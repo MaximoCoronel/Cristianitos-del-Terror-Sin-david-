@@ -1,7 +1,7 @@
 # Cristianitos-del-Terror-Sin-david-
 Integrantes 6AVP:
-Maximo Coronel Aispuro
-Axel Armando Beltran Lopez
-Emiliano Lopez Sanchez
-Suri Adaney Espinoza Lugo
-Hecto Aaron Ortiz Serrano
+Maximo Coronel Aispuro: Scrum Master //
+Axel Armando Beltran Lopez: Product Owner //
+Emiliano Lopez Sanchez: Programador //
+Suri Adaney Espinoza Lugo: Chocolatito //
+Hecto Aaron Ortiz Serrano: Diseñador //
