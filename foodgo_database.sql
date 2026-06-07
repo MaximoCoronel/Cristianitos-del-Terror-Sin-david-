@@ -121,6 +121,16 @@ CREATE TABLE restaurantes (
     ON UPDATE CASCADE ON DELETE SET NULL
 ) ENGINE=InnoDB COMMENT='Restaurantes registrados en la plataforma';
 
+INSERT INTO `restaurantes` (`id`, `nombre`, `descripcion`, `categoria_id`, `imagen`, `direccion`, `colonia`, `ciudad`, `estado_mx`, `cp`, `latitud`, `longitud`, `maps_url`, `telefono`, `whatsapp`, `email`, `sitio_web`, `instagram`, `facebook`, `horario`, `tiempo_entrega`, `costo_envio`, `pedido_minimo`, `acepta_reservas`, `capacidad`, `calificacion`, `total_resenas`, `tendencia`, `verificado`, `activo`, `created_at`, `updated_at`) VALUES
+(1, 'Burger Bros', 'Las mejores hamburguesas artesanales de Culiacán. Carne angus 100% fresca, nunca congelada. Cada burger es armada a mano con ingredientes seleccionados y pan artesanal horneado diariamente.', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3I4mEjGz1ojyEQGcHHGm85xXTtzcYTNzkQ&s', 'Blvd. Insurgentes 1420', 'Los Pinos', 'Culiacán', 'Sinaloa', '80020', 24.7996200, -107.3879300, NULL, '667-100-1111', '6671001111', NULL, NULL, NULL, NULL, 'Lun-Dom 12:00-23:00', 25, 29.00, 150.00, 1, 60, 4.7, 3, 1, 1, 1, '2026-06-03 03:31:09', '2026-06-04 02:37:44'),
+(2, 'Pizza Mia', 'Pizza italiana auténtica horneada en horno de leña. Masa madre de fermentación lenta, ingredientes importados directamente de Italia. La tradición napolitana en Culiacán.', 2, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9V0BTDiG8qjj1WQLMLlrEiSRJCXxXu32hJA&s', 'Av. Álvaro Obregón 340', 'Centro', 'Culiacán', 'Sinaloa', '80000', 24.8050100, -107.3940200, NULL, '667-200-2222', '6672002222', NULL, NULL, NULL, NULL, 'Mar-Dom 13:00-23:00', 35, 0.00, 100.00, 1, 45, 4.5, 2, 0, 1, 1, '2026-06-03 03:31:09', '2026-06-04 02:43:41'),
+(3, 'Sakura Sushi', 'Sushi premium elaborado por chefs con entrenamiento en Japón. Pescado fresco de importación directo del mercado Tsukiji. Experiencia gastronómica japonesa única en el noroeste de México.', 3, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOrqWk5t_H_93VbgXpdxsuRhBeDSCZSNyleA&s', 'Calle Ángel Flores 890', 'Chapultepec', 'Culiacán', 'Sinaloa', '80060', 24.7921500, -107.3850100, NULL, '667-300-3333', '6673003333', NULL, NULL, NULL, NULL, 'Lun-Dom 13:00-22:00', 40, 49.00, 200.00, 1, 40, 4.7, 3, 1, 1, 1, '2026-06-03 03:31:09', '2026-06-04 02:39:00'),
+(4, 'Tacos El Güero', 'Tacos auténticos con receta familiar de más de 30 años. Tortillas hechas a mano cada mañana, carnes marinadas toda la noche. Un clásico de Culiacán que no puedes perderte.', 4, 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/0f/b1/85/caption.jpg?w=900&h=500&s=1', 'Mercado Garmendia Local 45', 'Centro', 'Culiacán', 'Sinaloa', '80000', 24.8060000, -107.3960000, NULL, '667-400-4444', '6674004444', NULL, NULL, NULL, NULL, 'Lun-Sáb 08:00-18:00', 20, 19.00, 80.00, 0, NULL, 5.0, 2, 1, 1, 1, '2026-06-03 03:31:09', '2026-06-04 02:35:32'),
+(5, 'Green Bowl', 'Alimentación saludable y deliciosa. Ensaladas, bowls de proteína, wraps y smoothies preparados con ingredientes orgánicos de productores locales. Cuida tu salud sin sacrificar el sabor.', 5, 'https://saladbowl.mx/sucursal.JPG', 'Plaza Fórum Local B-12', 'Las Quintas', 'Culiacán', 'Sinaloa', '80060', 24.7880000, -107.3920000, NULL, '667-500-5555', '6675005555', NULL, NULL, NULL, NULL, 'Lun-Sáb 09:00-21:00', 15, 35.00, 120.00, 0, NULL, 0.0, 0, 0, 0, 1, '2026-06-03 03:31:09', '2026-06-04 02:42:34'),
+(6, 'Smash Burgers MX', 'Smash burgers estilo americano con un toque mexicano inconfundible. Doble aplastada, queso fundido en el momento, salsas secretas de la casa. Descubre por qué somos los favoritos de la noche.', 1, 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/8f/f7/93/outside.jpg?w=900&h=500&s=1', 'Av. Universitaria 2201', 'Universidad', 'Culiacán', 'Sinaloa', '80010', 24.7945000, -107.4010000, NULL, '667-600-6666', '6676006666', NULL, NULL, NULL, NULL, 'Lun-Dom 13:00-00:00', 30, 29.00, 150.00, 1, 35, 4.0, 1, 1, 0, 1, '2026-06-03 03:31:09', '2026-06-04 02:39:49'),
+(7, 'Ramen Kuroi', 'Ramen artesanal con caldo de 12 horas de cocción lenta. Recetas tradicionales japonesas adaptadas con ingredientes frescos del pacífico mexicano. Cada tazón es una obra de arte gastronómica.', 7, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54FthWH-fKgbR-FCdqDSR4fGgjfEGAuxoUg&s', 'Calle Rosales 550', 'Centro', 'Culiacán', 'Sinaloa', '80000', 24.8030000, -107.3900000, NULL, '667-700-7777', '6677007777', NULL, NULL, NULL, NULL, 'Mar-Dom 13:00-22:00', 35, 39.00, 150.00, 1, 30, 4.0, 1, 0, 0, 1, '2026-06-03 03:31:09', '2026-06-04 02:45:57'),
+(8, 'El Camarón Loco', 'Mariscos frescos del día, traídos directamente de Mazatlán cada mañana. Aguachiles, ceviches, cocteles y tostadas preparados en el momento. El mejor marisco del pacífico en tu mesa.', 8, 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/08/48/05/para-tu-comodidad-dos.jpg?w=800&h=-1&s=1', 'Blvd. Rolando Arjona 1100', 'Bonanza', 'Culiacán', 'Sinaloa', '80030', 24.8100000, -107.3800000, NULL, '667-800-8888', '6678008888', NULL, NULL, NULL, NULL, 'Lun-Dom 10:00-20:00', 30, 45.00, 200.00, 1, 50, 5.0, 2, 1, 1, 1, '2026-06-03 03:31:09', '2026-06-04 02:36:15');
+
 
 -- ── Horarios detallados por día ─────────────────────────────────────────
 CREATE TABLE horarios_restaurante (
@@ -657,76 +667,7 @@ INSERT INTO categorias (nombre, icono, descripcion) VALUES
 
 
 -- ── Restaurantes ────────────────────────────────────────────────────────
-INSERT INTO restaurantes
-  (nombre, descripcion, categoria_id,
-   direccion, colonia, ciudad, estado_mx, cp, latitud, longitud,
-   telefono, whatsapp, horario,
-   tiempo_entrega, costo_envio, pedido_minimo, acepta_reservas, capacidad,
-   tendencia, verificado)
-VALUES
-  ('Burger Bros',
-   'Las mejores hamburguesas artesanales de Culiacán. Carne angus 100% fresca, nunca congelada. Cada burger es armada a mano con ingredientes seleccionados y pan artesanal horneado diariamente.',
-   1,
-   'Blvd. Insurgentes 1420', 'Los Pinos', 'Culiacán', 'Sinaloa', '80020',
-   24.7996200, -107.3879300,
-   '667-100-1111', '6671001111', 'Lun-Dom 12:00-23:00',
-   25, 29.00, 150.00, 1, 60, 1, 1),
 
-  ('Pizza Mia',
-   'Pizza italiana auténtica horneada en horno de leña. Masa madre de fermentación lenta, ingredientes importados directamente de Italia. La tradición napolitana en Culiacán.',
-   2,
-   'Av. Álvaro Obregón 340', 'Centro', 'Culiacán', 'Sinaloa', '80000',
-   24.8050100, -107.3940200,
-   '667-200-2222', '6672002222', 'Mar-Dom 13:00-23:00',
-   35, 0.00, 100.00, 1, 45, 0, 1),
-
-  ('Sakura Sushi',
-   'Sushi premium elaborado por chefs con entrenamiento en Japón. Pescado fresco de importación directo del mercado Tsukiji. Experiencia gastronómica japonesa única en el noroeste de México.',
-   3,
-   'Calle Ángel Flores 890', 'Chapultepec', 'Culiacán', 'Sinaloa', '80060',
-   24.7921500, -107.3850100,
-   '667-300-3333', '6673003333', 'Lun-Dom 13:00-22:00',
-   40, 49.00, 200.00, 1, 40, 1, 1),
-
-  ('Tacos El Güero',
-   'Tacos auténticos con receta familiar de más de 30 años. Tortillas hechas a mano cada mañana, carnes marinadas toda la noche. Un clásico de Culiacán que no puedes perderte.',
-   4,
-   'Mercado Garmendia Local 45', 'Centro', 'Culiacán', 'Sinaloa', '80000',
-   24.8060000, -107.3960000,
-   '667-400-4444', '6674004444', 'Lun-Sáb 08:00-18:00',
-   20, 19.00, 80.00, 0, NULL, 1, 1),
-
-  ('Green Bowl',
-   'Alimentación saludable y deliciosa. Ensaladas, bowls de proteína, wraps y smoothies preparados con ingredientes orgánicos de productores locales. Cuida tu salud sin sacrificar el sabor.',
-   5,
-   'Plaza Fórum Local B-12', 'Las Quintas', 'Culiacán', 'Sinaloa', '80060',
-   24.7880000, -107.3920000,
-   '667-500-5555', '6675005555', 'Lun-Sáb 09:00-21:00',
-   15, 35.00, 120.00, 0, NULL, 0, 0),
-
-  ('Smash Burgers MX',
-   'Smash burgers estilo americano con un toque mexicano inconfundible. Doble aplastada, queso fundido en el momento, salsas secretas de la casa. Descubre por qué somos los favoritos de la noche.',
-   1,
-   'Av. Universitaria 2201', 'Universidad', 'Culiacán', 'Sinaloa', '80010',
-   24.7945000, -107.4010000,
-   '667-600-6666', '6676006666', 'Lun-Dom 13:00-00:00',
-   30, 29.00, 150.00, 1, 35, 1, 0),
-
-  ('Ramen Kuroi',
-   'Ramen artesanal con caldo de 12 horas de cocción lenta. Recetas tradicionales japonesas adaptadas con ingredientes frescos del pacífico mexicano. Cada tazón es una obra de arte gastronómica.',
-   7,
-   'Calle Rosales 550', 'Centro', 'Culiacán', 'Sinaloa', '80000',
-   24.8030000, -107.3900000,
-   '667-700-7777', '6677007777', 'Mar-Dom 13:00-22:00',
-   35, 39.00, 150.00, 1, 30, 0, 0),
-
-  ('El Camarón Loco',
-   'Mariscos frescos del día, traídos directamente de Mazatlán cada mañana. Aguachiles, ceviches, cocteles y tostadas preparados en el momento. El mejor marisco del pacífico en tu mesa.',
-   8,
-   'Blvd. Rolando Arjona 1100', 'Bonanza', 'Culiacán', 'Sinaloa', '80030',
-   24.8100000, -107.3800000,
-   '667-800-8888', '6678008888', 'Lun-Dom 10:00-20:00',
-   30, 45.00, 200.00, 1, 50, 1, 1);
 
 
 -- ── Horarios detallados ──────────────────────────────────────────────────
